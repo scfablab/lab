@@ -1,0 +1,12 @@
+*% Roland GX-640(CG355) Driver ======================
+
+[def]
+NickName=GX-640
+Package=WINVISTA
+graphicfilter=RD355GE.dll
+uilibrary=RD355UE.dll
+CHMHelpJP=RD355JP.CHM
+CHMHelpEN=RD355EN.CHM
+StatusMonitorEx=RD355SL.DLL
+
+[machine]

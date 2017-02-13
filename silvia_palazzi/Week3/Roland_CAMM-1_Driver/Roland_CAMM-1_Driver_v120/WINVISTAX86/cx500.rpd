@@ -1,0 +1,14 @@
+*% Roland CX-500 Driver ======================
+
+[def]
+NickName=CX-500
+Package=WINVISTA
+graphicfilter=RD770GE.dll
+uilibrary=RD770UE.dll
+;HelpFileJPG=RD770JPG.HLP
+;HelpFileENG=RD770ENG.HLP
+CHMHelpJP=RD770JP.CHM
+CHMHelpEN=RD770EN.CHM
+
+[machine]
+

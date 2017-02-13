@@ -1,0 +1,13 @@
+*% Roland CX-400 Driver ======================
+
+[def]
+NickName=CX-400
+Package=WINVISTA
+graphicfilter=RD771GE.dll
+uilibrary=RD771UE.dll
+;HelpFileJPG=RD771JPG.HLP
+;HelpFileENG=RD771ENG.HLP
+CHMHelpJP=RD771JP.CHM
+CHMHelpEN=RD771EN.CHM
+
+[machine]

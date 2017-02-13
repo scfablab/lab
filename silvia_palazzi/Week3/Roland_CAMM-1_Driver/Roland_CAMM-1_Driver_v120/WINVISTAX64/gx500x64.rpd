@@ -1,0 +1,11 @@
+*% Roland GX-500 x64 Driver ======================
+
+[def]
+NickName=GX-500
+graphicfilter=RD352GE.dll
+uilibrary=RD352UE.dll
+CHMHelpJP=RD352JP.CHM
+CHMHelpEN=RD352EN.CHM
+StatusMonitorEx=RD352SL.DLL
+
+[machine]

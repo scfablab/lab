@@ -1,0 +1,13 @@
+*% Roland CX-12 Driver ======================
+
+[def]
+NickName=CX-12
+Package=WINVISTA
+graphicfilter=RD677GE.dll
+uilibrary=RD677UE.dll
+;HelpFileJPG=RD677JPG.HLP
+;HelpFileENG=RD677ENG.HLP
+CHMHelpJP=RD677JP.CHM
+CHMHelpEN=RD677EN.CHM
+
+[machine]

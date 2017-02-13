@@ -1,0 +1,88 @@
+;
+;	Roland CAMM-1 DRIVER for Windows(R)
+;		Model: GX-400
+;
+[Version]
+Signature="$Windows NT$"
+Class=Printer
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
+Provider=%ROLAND%
+DriverVer=01/06/2015,1.2.0.0
+
+[Manufacturer]
+%ROLAND%=ROLAND,NTamd64.6.1,NTamd64.6.0,NTamd64.5.1
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;; x64
+[ROLAND.NTamd64.6.1]
+"Roland GX-400"=GX400x64.RPD,RolandGX-400D742
+
+[ROLAND.NTamd64.6.0]
+;
+
+[ROLAND.NTamd64.5.1]
+;
+
+[ROLAND]
+;
+
+
+[GX400x64.RPD]
+CopyFiles=@GX400x64.RPD,RDCM1_ALL64,RDCM1_SYS64
+DataSection=RDCM1_DATA64
+Ports=USB
+
+[RDCM1_DATA64]
+DriverFile=RD351GR.DLL
+ConfigFile=RD351UI.DLL
+HelpFile=%LOCALHLP%
+LanguageMonitor=%LANGMON%,RD351LM.DLL
+
+[RDCM1_ALL64]
+RD351GR.DLL,RDCM1GR64.DLL
+RD351GE.DLL,RDCM1GE64.DLL
+RD351UI.DLL,RDCM1UI64.DLL
+RD351UE.DLL,RDCM1UE64.DLL
+RD351JP.CHM,RD381JP.CHM
+RD351EN.CHM,RD381EN.CHM
+RD351LM.DLL,rdlm64.dll
+RD351SL.DLL,rdupslt64.dll
+
+[RDCM1_SYS64]
+RD351LM.DLL,rdlm64.dll
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;; x86
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[SourceDisksNames]
+1=%DISKNAME%,,
+
+[DestinationDirs]
+DefaultDestDir=66000
+RDCM1_SYS64=66002
+
+[SourceDisksFiles]
+RDCM1GR64.DLL=1
+RDCM1GE64.DLL=1
+RDCM1UI64.DLL=1
+RDCM1UE64.DLL=1
+RD381JP.CHM=1
+RD381EN.CHM=1
+rdlm64.dll=1
+rdupslt64.dll=1
+gx400x64.rpd=1
+
+[Strings]
+LOCALHLP="RD351EN.CHM"
+ROLAND="Roland"
+LANGMON="Roland GX-400 Language Monitor"
+DISKNAME="Roland GX-400 Driver"
+
+[Strings.0011]
+LOCALHLP="RD351JP.CHM"
+ROLAND="Roland"
+LANGMON="Roland GX-400 Language Monitor"
+DISKNAME="Roland GX-400 Driver"

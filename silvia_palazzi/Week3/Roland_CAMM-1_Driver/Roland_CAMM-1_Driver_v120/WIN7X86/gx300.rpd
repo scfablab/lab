@@ -1,0 +1,16 @@
+*% Roland GX-300(CG350) Driver ======================
+
+[def]
+NickName=GX-300
+Package=WINVISTA
+graphicfilter=RD350GE.dll
+uilibrary=RD350UE.dll
+;HelpFileJPG=RD381JPG.HLP
+;HelpFileENG=RD381ENG.HLP
+;HelpFileJPF=RDCM1JPF.HLP
+;HelpFileENF=RDCM1ENF.HLP
+CHMHelpJP=RD350JP.CHM
+CHMHelpEN=RD350EN.CHM
+StatusMonitorEx=RD350SL.DLL
+
+[machine]

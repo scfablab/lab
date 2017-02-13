@@ -1,0 +1,13 @@
+*% Roland CX-300 Driver ======================
+
+[def]
+NickName=CX-300
+Package=WINVISTA
+graphicfilter=RD772GE.dll
+uilibrary=RD772UE.dll
+;HelpFileJPG=RD772JPG.HLP
+;HelpFileENG=RD772ENG.HLP
+CHMHelpJP=RD772JP.CHM
+CHMHelpEN=RD772EN.CHM
+
+[machine]

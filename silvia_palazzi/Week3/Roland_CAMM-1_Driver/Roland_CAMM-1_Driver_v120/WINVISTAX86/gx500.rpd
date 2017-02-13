@@ -1,0 +1,16 @@
+*% Roland GX-500(CG352) Driver ======================
+
+[def]
+NickName=GX-500
+Package=WINVISTA
+graphicfilter=RD352GE.dll
+uilibrary=RD352UE.dll
+;HelpFileJPG=RD381JPG.HLP
+;HelpFileENG=RD381ENG.HLP
+;HelpFileJPF=RDCM1JPF.HLP
+;HelpFileENF=RDCM1ENF.HLP
+CHMHelpJP=RD352JP.CHM
+CHMHelpEN=RD352EN.CHM
+StatusMonitorEx=RD352SL.DLL
+
+[machine]

@@ -1,0 +1,11 @@
+*% Roland GX-400 x64 Driver ======================
+
+[def]
+NickName=GX-400
+graphicfilter=RD351GE.dll
+uilibrary=RD351UE.dll
+CHMHelpJP=RD351JP.CHM
+CHMHelpEN=RD351EN.CHM
+StatusMonitorEx=RD351SL.DLL
+
+[machine]

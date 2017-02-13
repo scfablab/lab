@@ -1,0 +1,89 @@
+;
+;	Roland CAMM-1 DRIVER for Windows(R)
+;		Model: GX-640
+;
+[Version]
+Signature="$Windows NT$"
+Class=Printer
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
+Provider=%ROLAND%
+DriverVer=01/06/2015,1.2.0.0
+
+[Manufacturer]
+%ROLAND%=ROLAND,NTamd64.6.1,NTamd64.6.0,NTamd64.5.1
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;; x64
+
+[ROLAND.NTamd64.6.1]
+"Roland GX-640"=GX640x64.RPD,RolandGX-640D7E3
+
+[ROLAND.NTamd64.6.0]
+;
+
+[ROLAND.NTamd64.5.1]
+;
+
+[ROLAND]
+;
+
+[GX640x64.RPD]
+CopyFiles=@GX640x64.RPD,RDCM1_ALL64,RDCM1_SYS64
+DataSection=RDCM1_DATA64
+Ports=USB
+
+[RDCM1_DATA64]
+DriverFile=RD355GR.DLL
+ConfigFile=RD355UI.DLL
+HelpFile=%LOCALHLP%
+LanguageMonitor=%LANGMON%,RD355LM.DLL
+
+
+[RDCM1_ALL64]
+RD355GR.DLL,RDCM1GR64.DLL
+RD355GE.DLL,RDCM1GE64.DLL
+RD355UI.DLL,RDCM1UI64.DLL
+RD355UE.DLL,RDCM1UE64.DLL
+RD355LM.DLL,rdlm64.dll
+RD355JP.CHM,RD381JP.CHM
+RD355EN.CHM,RD381EN.CHM
+RD355SL.DLL,RDUPSLT64.DLL
+
+[RDCM1_SYS64]
+RD355LM.DLL,rdlm64.dll
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;; x86
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[SourceDisksNames]
+1=%DISKNAME%,,
+
+[DestinationDirs]
+DefaultDestDir=66000
+RDCM1_SYS64=66002
+
+[SourceDisksFiles]
+RDCM1GR64.DLL=1
+RDCM1GE64.DLL=1
+RDCM1UI64.DLL=1
+RDCM1UE64.DLL=1
+rdlm64.dll=1
+RD381JP.CHM=1
+RD381EN.CHM=1
+RDUPSLT64.DLL=1
+GX640x64.RPD=1
+
+[Strings]
+LOCALHLP="RD355EN.CHM"
+ROLAND="Roland"
+LANGMON="Roland GX-640 Language Monitor"
+DISKNAME="Roland GX-640 Driver"
+
+[Strings.0011]
+LOCALHLP="RD355JP.CHM"
+ROLAND="Roland"
+LANGMON="Roland GX-640 Language Monitor"
+DISKNAME="Roland GX-640 Driver"

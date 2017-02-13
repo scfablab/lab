@@ -1,0 +1,89 @@
+;
+;	Roland CAMM-1 DRIVER for Windows(R)
+;		Model: GS-24
+;
+[Version]
+Signature="$Windows NT$"
+Class=Printer
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
+Provider=%ROLAND%
+DriverVer=01/06/2015,1.2.0.0
+
+[Manufacturer]
+%ROLAND%=ROLAND,NTamd64.6.0,NTamd64.6.1,NTamd64.5.1
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;; x64
+
+[ROLAND.NTamd64.6.0]
+"Roland GS-24"=GS24x64.RPD,RolandGS-240604
+
+[ROLAND.NTamd64.6.1]
+;
+
+[ROLAND.NTamd64.5.1]
+;	
+
+[ROLAND]
+;
+
+[GS24x64.RPD]
+CopyFiles=@GS24x64.RPD,RDCM1_ALL64,RDCM1_SYS64
+DataSection=RDCM1_DATA64
+Ports=USB
+
+[RDCM1_DATA64]
+DriverFile=RD1029GR.DLL
+ConfigFile=RD1029UI.DLL
+HelpFile=%LOCALHLP%
+LanguageMonitor=%LANGMON%,RD1029LM.DLL
+
+
+[RDCM1_ALL64]
+RD1029GR.DLL,RDCM1GR64.DLL
+RD1029GE.DLL,RDCM1GE64.DLL
+RD1029UI.DLL,RDCM1UI64.DLL
+RD1029UE.DLL,RDCM1UE64.DLL
+RD1029LM.DLL,rdlm64.dll
+RD1029JP.CHM,RD381JP.CHM
+RD1029EN.CHM,RD381EN.CHM
+RD1029SL.DLL,GS24RemoteControlAPI64.DLL
+
+[RDCM1_SYS64]
+RD1029LM.DLL,rdlm64.dll
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;; x86
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[SourceDisksNames]
+1=%DISKNAME%,,
+
+[DestinationDirs]
+DefaultDestDir=66000
+RDCM1_SYS64=66002
+
+[SourceDisksFiles]
+RDCM1GR64.DLL=1
+RDCM1GE64.DLL=1
+RDCM1UI64.DLL=1
+RDCM1UE64.DLL=1
+rdlm64.dll=1
+RD381JP.CHM=1
+RD381EN.CHM=1
+GS24RemoteControlAPI64.DLL=1
+GS24x64.RPD=1
+
+[Strings]
+LOCALHLP="RD1029EN.CHM"
+ROLAND="Roland"
+LANGMON="Roland GS-24 Language Monitor"
+DISKNAME="Roland GS-24 Driver"
+
+[Strings.0011]
+LOCALHLP="RD1029JP.CHM"
+ROLAND="Roland"
+LANGMON="Roland GS-24 Language Monitor"
+DISKNAME="Roland GS-24 Driver"

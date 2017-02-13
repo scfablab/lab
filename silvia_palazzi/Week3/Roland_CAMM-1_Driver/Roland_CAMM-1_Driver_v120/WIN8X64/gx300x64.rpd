@@ -1,0 +1,11 @@
+*% Roland GX-300 x64 Driver ======================
+
+[def]
+NickName=GX-300
+graphicfilter=RD350GE.dll
+uilibrary=RD350UE.dll
+CHMHelpJP=RD350JP.CHM
+CHMHelpEN=RD350EN.CHM
+StatusMonitorEx=RD350SL.DLL
+
+[machine]

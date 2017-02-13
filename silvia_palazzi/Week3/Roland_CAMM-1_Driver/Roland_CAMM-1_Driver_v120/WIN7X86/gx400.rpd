@@ -1,0 +1,16 @@
+*% Roland GX-400(CG351) Driver ======================
+
+[def]
+NickName=GX-400
+Package=WINVISTA
+graphicfilter=RD351GE.dll
+uilibrary=RD351UE.dll
+;HelpFileJPG=RD381JPG.HLP
+;HelpFileENG=RD381ENG.HLP
+;HelpFileJPF=RDCM1JPF.HLP
+;HelpFileENF=RDCM1ENF.HLP
+CHMHelpJP=RD351JP.CHM
+CHMHelpEN=RD351EN.CHM
+StatusMonitorEx=RD351SL.DLL
+
+[machine]

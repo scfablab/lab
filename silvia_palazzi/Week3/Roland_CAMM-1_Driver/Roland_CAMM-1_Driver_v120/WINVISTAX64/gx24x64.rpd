@@ -1,0 +1,11 @@
+*% Roland GX-24 x64 Driver ======================
+
+[def]
+NickName=GX-24
+graphicfilter=RD381GE.dll
+uilibrary=RD381UE.dll
+CHMHelpJP=RD381JP.CHM
+CHMHelpEN=RD381EN.CHM
+StatusMonitorEx=RD381SL.DLL
+
+[machine]

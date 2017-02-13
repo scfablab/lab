@@ -1,0 +1,12 @@
+*% Roland GS-24(CG1029) Driver ======================
+
+[def]
+NickName=GS-24
+Package=WINVISTA
+graphicfilter=RD1029GE.dll
+uilibrary=RD1029UE.dll
+CHMHelpJP=RD1029JP.CHM
+CHMHelpEN=RD1029EN.CHM
+StatusMonitorEx=RD1029SL.DLL
+
+[machine]

@@ -1,0 +1,16 @@
+*% Roland GX-24 Driver ======================
+
+[def]
+NickName=GX-24
+Package=WINVISTA
+graphicfilter=RD381GE.dll
+uilibrary=RD381UE.dll
+;HelpFileJPG=RD381JPG.HLP
+;HelpFileENG=RD381ENG.HLP
+;HelpFileJPF=RDCM1JPF.HLP
+;HelpFileENF=RDCM1ENF.HLP
+CHMHelpJP=RD381JP.CHM
+CHMHelpEN=RD381EN.CHM
+StatusMonitorEx=RD381SL.DLL
+
+[machine]

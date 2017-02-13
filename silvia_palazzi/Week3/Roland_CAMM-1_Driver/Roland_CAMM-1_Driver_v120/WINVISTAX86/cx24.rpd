@@ -1,0 +1,13 @@
+*% Roland CX-24 Driver ======================
+
+[def]
+NickName=CX-24
+Package=WINVISTA
+graphicfilter=RD676GE.dll
+uilibrary=RD676UE.dll
+;HelpFileJPG=RD676JPG.HLP
+;HelpFileENG=RD676ENG.HLP
+CHMHelpJP=RD676JP.CHM
+CHMHelpEN=RD676EN.CHM
+
+[machine]
