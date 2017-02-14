@@ -1,0 +1,10 @@
+"k"= 0.045mm'kerf
+"w"= 30mm'circle width
+"m"= 5.7mm'material thickness
+"jhf"= "m" - 2 * "k"'female joint height
+"jhm"= "m" + 2 * "k"'male joint height
+"d"= 50mm'circle diameter
+"d2"= "d" + 30mm
+"d3"= "d2" + 30mm
+"id"= 50mm 'internal circle distance
+
