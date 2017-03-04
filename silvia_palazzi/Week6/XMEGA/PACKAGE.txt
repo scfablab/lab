@@ -1,0 +1,10 @@
+COMMOND DIMENSIONS (UNIT OF MEASURE: mm)
+
+D=9.00
+D1=7.00
+(D-D1)/2=PD(pad lenght)=1.00
+-I'll use PD=1.50 mm to make solder easier-
+e=0.8 #inner distance between pads width medium
+e/2=ED(edge distance)=0.4  
+PDE=7*e=5.5 mm #pad area width
+(D1-PDE)/2=
