@@ -1,30 +1,31 @@
+/* Sweep
+ by BARRAGAN <http://barraganstudio.com>
+ This example code is in the public domain.
 
-// Wire Master Writer
-// by Nicholas Zambetti <http://www.zambetti.com>
+ modified 8 Nov 2013
+ by Scott Fitzgerald
+ http://www.arduino.cc/en/Tutorial/Sweep
+*/
 
-// Demonstrates use of the Wire library
-// Writes data to an I2C/TWI slave device
-// Refer to the "Wire Slave Receiver" example for use with this
+#include <Servo.h>
 
-// Created 29 March 2006
+Servo myservo;  // create servo object to control a servo
+// twelve servo objects can be created on most boards
 
-// This example code is in the public domain.
-
-
-#include <Wire.h>
+int pos = 0;    // variable to store the servo position
 
 void setup() {
-  Wire.begin(); // join i2c bus (address optional for master)
+  myservo.attach(3);  // attaches the servo on pin 9 to the servo object
 }
 
-byte x = 3;
-
 void loop() {
-  Wire.beginTransmission(8); // transmit to device #8
-  
-  Wire.write(x);              // sends one byte
-  Wire.endTransmission();    // stop transmitting
-
-  
-  delay(500);
+  for (pos = 0; pos <= 180; pos += 1) { // goes from 0 degrees to 180 degrees
+    // in steps of 1 degree
+    myservo.write(pos);              // tell servo to go to position in variable 'pos'
+    delay(15);                       // waits 15ms for the servo to reach the position
+  }
+  for (pos = 180; pos >= 0; pos -= 1) { // goes from 180 degrees to 0 degrees
+    myservo.write(pos);              // tell servo to go to position in variable 'pos'
+    delay(15);                       // waits 15ms for the servo to reach the position
+  }
 }
