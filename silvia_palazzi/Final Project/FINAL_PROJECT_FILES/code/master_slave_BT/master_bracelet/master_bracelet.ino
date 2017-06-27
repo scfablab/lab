@@ -1,6 +1,6 @@
 #include <SoftwareSerial.h>
 
-//const int motor = 11;
+const int motor = 5;
 const int rxpin = 2;  //Andiamo ad assegnare al pin 2 l’indirizzo di ricezione dati (e lo colleghiamo al pin TXD del modulo)
 const int txpin = 3;  //Assegnamo invece al pin 3 l’indirizzo di trasmissione dati (collegandolo al pin RXD del nostro componente
 int c=0;
@@ -17,12 +17,12 @@ void loop(){
 if(bluetooth.available() > 0){  //if bluetooth receives some data
   c = bluetooth.read();  //data are placed in a char variable so as to suit both letters and numbers
   Serial.write(c);  //data are written in serial monitor
-// for(c>10){
-   // digitalWrite(motor,HIGH); //motor vibrates for 300ms
-    //delay(300);
-   // digitalWrite(motor,LOW);//motor turns off
-    //delay(500);
-    //}
+    for(c>10){
+      digitalWrite(motor,HIGH); //motor vibrates for 300ms
+      delay(300);
+      digitalWrite(motor,LOW);//motor turns off
+      delay(500);
+    }
   }
 delay(10);
 }
