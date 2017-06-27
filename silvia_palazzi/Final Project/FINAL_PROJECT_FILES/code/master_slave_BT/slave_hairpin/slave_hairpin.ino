@@ -9,7 +9,7 @@ SoftwareSerial bluetooth(rxpin, txpin);  //to write an easier code I gave "bluet
 
 
 void setup(){
-bluetooth.begin(115200);  //Initialization of serial interface at AT mode baudrate
+bluetooth.begin(115200);  //Initialization of BT at AT mode baudrate
 delay(300);
 }
 

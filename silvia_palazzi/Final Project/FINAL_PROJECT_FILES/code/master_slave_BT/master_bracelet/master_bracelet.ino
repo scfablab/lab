@@ -1,15 +1,15 @@
 #include <SoftwareSerial.h>
 
 const int motor = 5;
-const int rxpin = 2;  //Andiamo ad assegnare al pin 2 l’indirizzo di ricezione dati (e lo colleghiamo al pin TXD del modulo)
-const int txpin = 3;  //Assegnamo invece al pin 3 l’indirizzo di trasmissione dati (collegandolo al pin RXD del nostro componente
+const int rxpin = 0;  //set pin 1 as data receiver (it will be linked to BT module's TXD pin)
+const int txpin = 1;  //set pin 0 as data transmitter (it will be linked to BT module's RXD pin)
 int c=0;
-SoftwareSerial bluetooth(rxpin, txpin);  //Assegnamo ad un nome (bluetooth) i suoi pin di ricezione e trasmissione, per facilitarci la scrittura del codice
+SoftwareSerial bluetooth(rxpin, txpin);  //to write an easier code I gave "bluetooth" name to transmission and reception pins
 
 void setup(){
-//pinMode(motor,OUTPUT);
-Serial.begin(115200);  //Inizializziamo l’interfaccia seriale al baud rate dell’AT-mode
-bluetooth.begin(115200);  //Inizializziamo l’interfaccia del modulo bluetooth sempre al baud rate riferito alla modalità AT
+pinMode(motor,OUTPUT);
+Serial.begin(115200);  //Initialization of serial interface at AT mode baudrate
+bluetooth.begin(115200);  //Initialization of BT communication at AT mode baudrate
 }
 
 void loop(){
