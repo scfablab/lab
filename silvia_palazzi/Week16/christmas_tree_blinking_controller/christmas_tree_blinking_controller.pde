@@ -16,8 +16,7 @@ boolean rect2Over = false;
 
 void setup() {
   size(750, 400);
- // myPort = new Serial(this, "/dev/ttyACM0", 115200);
-  //myPort = new Serial(this, "COM0", 9600);
+   myPort = new Serial(this, "/dev/ttyUSB0", 9600);
   //colors of the buttons
   rectColor = color(150, 255,90);
   rectHighlight = color(100);
