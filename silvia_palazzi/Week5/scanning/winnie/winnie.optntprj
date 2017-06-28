@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scan_project name="winnie" type="SP" vers="2" subvers="0">
+    <root>
+        <range_image_group name="front" type="32">
+            <range_image name="RangeImage00007" type="16" color="4279614549" flags="0"/>
+            <range_image name="RangeImage00008" type="16" color="4279327345" flags="0"/>
+            <range_image name="RangeImage00009" type="16" color="4285151543" flags="0"/>
+            <range_image name="RangeImage00010" type="16" color="4283502739" flags="0"/>
+            <range_image name="RangeImage00011" type="16" color="4286543150" flags="0"/>
+            <range_image name="RangeImage00012" type="16" color="4279611925" flags="0"/>
+            <range_image name="RangeImage00014" type="16" color="4290986667" flags="0"/>
+            <range_image name="RangeImage00015" type="16" color="4292706273" flags="0"/>
+            <range_image name="RangeImage00016" type="16" color="4281900488" flags="0"/>
+            <range_image name="RangeImage00017" type="16" color="4285977641" flags="0"/>
+            <range_image name="RangeImage00018" type="16" color="4288421015" flags="0"/>
+            <range_image name="RangeImage00019" type="16" color="4284660614" flags="0"/>
+            <range_image name="RangeImage00020" type="16" color="4291777688" flags="0"/>
+            <range_image name="RangeImage00021" type="16" color="4284360876" flags="0"/>
+        </range_image_group>
+        <range_image_group name="bottom" type="32">
+            <range_image name="RangeImage00022" type="16" color="4282717891" flags="0"/>
+            <range_image name="RangeImage00023" type="16" color="4286459924" flags="0"/>
+            <range_image name="RangeImage00024" type="16" color="4281902358" flags="0"/>
+            <range_image name="RangeImage00025" type="16" color="4285342072" flags="0"/>
+            <range_image name="RangeImage00026" type="16" color="4283203497" flags="0"/>
+            <range_image name="RangeImage00027" type="16" color="4282354717" flags="0"/>
+            <range_image name="RangeImage00028" type="16" color="4284814472" flags="0"/>
+            <range_image name="RangeImage00029" type="16" color="4292363581" flags="0"/>
+            <range_image name="RangeImage00032" type="16" color="4290061594" flags="0"/>
+            <range_image name="RangeImage00033" type="16" color="4280731989" flags="0"/>
+            <range_image name="RangeImage00034" type="16" color="4289688652" flags="0"/>
+            <range_image name="RangeImage00035" type="16" color="4280829556" flags="0"/>
+        </range_image_group>
+        <mesh name="Mesh00000" type="64" color="4280660942" flags="0"/>
+    </root>
+</scan_project>
